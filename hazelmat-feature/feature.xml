@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="info.jerrinot.hazelmat"
-      label="HazelmatFeature"
+      label="Hazelmat"
       version="1.0.0.qualifier">
 
    <description url="https://github.com/jerrinot/hazelmat">
@@ -15,6 +15,10 @@
    <license url="http://www.example.com/license">
       [Enter License Description here.]
    </license>
+
+   <url>
+      <update label="Hazelmat - Update Site" url="https://raw.githubusercontent.com/jerrinot/hazelmat/master/hazelmat-site"/>
+   </url>
 
    <plugin
          id="info.jerrinot.hazelmat.plugin"

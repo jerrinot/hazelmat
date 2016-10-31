@@ -53,7 +53,6 @@ public class SavePacketPayload implements IQuery {
     	
     	int[] objectIds = packetClass.getObjectIds();
     	listener.beginTask("Saving Packets Payload", objectIds.length);
-    	System.out.println("There is " + objectIds.length + " packets to explore!");
     	int worked = 0;
     	for (int objectId : objectIds) {
     		IObject object = snapshot.getObject(objectId);
