@@ -4,7 +4,7 @@
    <extension
          point="org.eclipse.mat.report.query">
       <query
-            impl="matplugin.SavePacketPayload">
+            impl="info.jerrinot.hazelmat.SavePacketPayload">
       </query>
    </extension>
 

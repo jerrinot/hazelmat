@@ -1,4 +1,4 @@
-package matplugin;
+package info.jerrinot.hazelmat;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -6,9 +6,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 import org.eclipse.mat.query.IQuery;
 import org.eclipse.mat.query.IResult;
@@ -24,12 +22,10 @@ import org.eclipse.mat.snapshot.ISnapshot;
 import org.eclipse.mat.snapshot.model.IClass;
 import org.eclipse.mat.snapshot.model.IObject;
 import org.eclipse.mat.snapshot.model.IPrimitiveArray;
-import org.eclipse.mat.snapshot.query.PieFactory;
 import org.eclipse.mat.util.IProgressListener;
-import org.eclipse.mat.util.MessageUtil;
 
-@CommandName("save_packet_payload")
-@Name("Save Packet Payload")
+@CommandName("save_payload_packets")
+@Name("Save Payload of All Packets")
 @Category("Hazelcast")
 public class SavePacketPayload implements IQuery {
 
@@ -76,7 +72,7 @@ public class SavePacketPayload implements IQuery {
     	}
     	listener.done();
     	
-    	TextResult textResult = new TextResult("<h1>Packet Stats</h1><br/>"+sb.toString(), true);
+    	TextResult textResult = new TextResult("Export Completed. "+sb.toString(), false);
     	result.add(new QuerySpec("Query Spec", textResult));
     	
     	

@@ -4,7 +4,7 @@
       label="HazelmatFeature"
       version="1.0.0.qualifier">
 
-   <description url="http://www.example.com/description">
+   <description url="https://github.com/jerrinot/hazelmat">
       Hazelcast Eclipse Memory Analyzer Integration
    </description>
 

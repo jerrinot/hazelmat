@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/info.jerrinot.hazelmat_1.0.0.201610311711.jar" id="info.jerrinot.hazelmat" version="1.0.0.201610311711">
+   <feature url="features/info.jerrinot.hazelmat_1.0.0.201610311727.jar" id="info.jerrinot.hazelmat" version="1.0.0.201610311727">
       <category name="Hazelcast"/>
    </feature>
    <category-def name="Hazelcast" label="Hazelcast">
